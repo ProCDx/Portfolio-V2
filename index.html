@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projay Developer - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(158, 158, 224);
+      font-size: 1.05rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .Firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 130px 0;
+    }
+
+    .Firstsection>div {
+      width: 30%;
+    }
+
+    .leftsection {
+      font-size: 2.5rem;
+      line-height: 1.4;
+    }
+
+    .rightsection img {
+      width: 100%;
+      height: auto;
+    }
+
+    .text-purple {
+      color: rgb(147, 54, 234);
+    }
+
+    #element {
+      color: rgb(147, 54, 234);
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border: 1px solid rgb(147, 54, 234);
+      border-radius: 6px;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgb(147, 54, 234);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Divider */
+    main hr {
+      border: 0;
+      background-color: rgb(93, 93, 214);
+      height: 0.5px;
+      margin: 40px 80px;
+    }
+
+    /* Work Experience */
+    .Secondsection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    .Secondsection h1 {
+      font-size: 1.9rem;
+    }
+
+    .text-gray {
+      color: rgb(155, 151, 151);
+    }
+
+    .Secondsection .box {
+      background: rgb(242, 227, 227);
+      width: 80vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .Secondsection .vertical {
+      height: 80px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+    }
+
+    .image-top {
+      width: 28px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 65px;
+      width: 150px;
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 75px;
+      width: 150px;
+      color: gray;
+      font-size: 12px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgb(18, 18, 62);
+      margin-top: 60px;
+      color: white;
+    }
+
+    .footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding: 40px 24px;
+    }
+
+    .footer h3 {
+      margin-bottom: 16px;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer li {
+      margin: 8px 0;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.85);
+      transition: color .3s ease;
+    }
+
+    .footer a:hover {
+      color: rgb(158, 158, 224);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      padding: 14px 0;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    @media (max-width: 900px) {
+      .footer {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Projay's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="Firstsection">
+      <div class="leftsection">
+        Hi, My name is <span class="text-purple">Projay</span><br>
+        and I am a passionate <span id="element"></span>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <a href="Assets/Resume.pdf" class="btn" download>Download Resume</a>
+          <a href="https://github.com/YourGithubUsername" class="btn" target="_blank">Visit GitHub</a>
+          <a href="https://www.linkedin.com/in/YourLinkedinUsername" class="btn" target="_blank">Visit LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="rightsection">
+        <img src="Assets/Web.png" alt="Webdev">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Work Experience -->
+    <section class="Secondsection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="Assets/dev1.png" alt="Developer1">
+          <div class="vertical-title">Html Developer (2010-2012)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="Assets/Nodejs.png" alt="Developer2">
+          <div class="vertical-title">Node.js Developer (2012-2014)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="Assets/Js.png" alt="Developer3">
+          <div class="vertical-title">CSS-JS Developer (2014-2016)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="Assets/Dev2.png" alt="Developer4">
+          <div class="vertical-title">Full Stack Developer (2016-2018)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="Assets/SM.png" alt="Developer5">
+          <div class="vertical-title">Senior Manager (2018-2020)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="Assets/dev1.png" alt="Developer6">
+          <div class="vertical-title">Founder of CO-Tix TechHub (2021-2024)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-First">
+        <h3>Projay's Developer Portfolio</h3>
+        <p>Building modern and responsive web experiences.</p>
+      </div>
+      <div class="footer-Second">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-Third">
+        <ul>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Experience</a></li>
+          <li><a href="/">Skills</a></li>
+          <li><a href="/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-Fourth">
+        <ul>
+          <li><a href="/">Privacy Policy</a></li>
+          <li><a href="/">Terms of Service</a></li>
+          <li><a href="/">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © projaysportfolio.com | All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer', 'Full Stack Developer', 'Ethical Hacker', 'AIML Engineer!'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
